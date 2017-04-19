@@ -33,4 +33,14 @@ body {
 
 .menu {
     font-size: 24px;
+    display: inline-block;
+}
+
+.menu li {
+    /*esta propiedad hace que la lista pase a ser cada elemento al lado del otro*/
+    display: inline-block;
+}
+
+.logotipo {
+    display: inline-block;
 }
