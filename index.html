@@ -8,7 +8,7 @@
         <link rel="stylesheet" type="text/css" href="css/style.css">
     </head>
     <body>
-        <header id="header" class="header"> <!--Header-->
+        <header id="header" class="header contenedor"> <!--Header-->
         <figure class="logotipo"> <!--Logotipo-->
             <img src="images/invie.png" width="186" alt="Logotipo Invie">
         </figure>
@@ -21,11 +21,14 @@
         </nav>    
         </header>
         <section id="portada" class="portada"> <!--Portada-->
-            <h1 class="titulo">Guitarras Inviesibles</h1> <!--Titulo-->
-            <h3 class="title-a">Sé la estrella de Rock que siempre quisiste ser</h3> <!--Resumen-->
-            <button type="">Conoce más</button> <!--Boton-->
+        <!--Agregamos este nuevo div para separar el background de la portada del contenido textual. De esta forma manenemos la imagen de fondo en widescreen-->
+            <div class="contenedor">
+                <h1 class="titulo">Guitarras Inviesibles</h1> <!--Titulo-->
+                <h3 class="title-a">Sé la estrella de Rock que siempre quisiste ser</h3> <!--Resumen-->
+                <button type="">Conoce más</button> <!--Boton-->
+            </div>
         </section>
-        <section id="guitarras" class="guitarras"> <!--Guitarras-->
+        <section id="guitarras" class="guitarras contenedor"> <!--Guitarras-->
             <h2>Nuestras Guitarras</h2> <!--Titulo-->
             <article class="guitarra"> <!--Guitarra1-->
                 <img src="images/invie-acustica.png" width="200" alt="Imagen Acústica">
