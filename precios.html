@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Invie | Precios</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Allerta|Montserrat" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body>
+        <header id="header" class="header contenedor"> <!--Header-->
+        <figure class="logotipo"> <!--Logotipo-->
+            <img src="images/invie.png" width="186" alt="Logotipo Invie">
+        </figure>
+        <nav class="menu"> <!--Menu-->
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#guitarras">Guitarras</a></li>
+                <li><a href="precios.html">Precios</a></li>
+            </ul>
+        </nav>    
+        </header>
+        <footer class="footer">
+            <div class="contenedor">
+                <div class="contacto">
+                    <img src="images/invie-white.png" alt="Logo Invie Blanco">
+                    <a href="tel:+529993451230"><strong>Teléfono: </strong><span>9993451230</span></a>
+                    <a href="mailto:contacto@invie.com"><strong>E-Mail: </strong><span>Contacto</span></a>
+                </div>
+                <form class="formulario">
+                    <div class="col1">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" required placeholder="Jesus Romero" id="nombre" name="nombre"/>
+                        <label for="email">E-Mail:</label>
+                        <input type="email" required placeholder="micorreo@ejemplo.com" id="email" name="email"/>
+                        <div class="sexo">
+                            <label for="mujer">
+                                <input type="radio" id="mujer" name="sexo" value="mujer" checked>Mujer
+                            </label>
+                            <label for="hombre">
+                                <input type="radio" id="hombre" name="sexo" value="hombre">Hombre
+                            </label>
+                        </div>
+                        <div class="intereses">
+                            <label for="cotizacion">
+                                <input type="checkbox" id="cotizacion" name="intereses" value="cotizacion" checked>Cotización
+                            </label>
+                            <label for="reclamos">
+                                <input type="checkbox" id="reclamos" name="intereses" value="reclamos">Reclamos
+                            </label>
+                            <label for="comentarios">
+                                <input type="checkbox" id="comentarios" name="intereses" value="comentarios">Comentarios
+                            </label>
+                            <label for="otros">
+                                <input type="checkbox" id="otros" name="intereses" value="otros">Otros
+                            </label>
+                        </div>                        
+                    </div>
+                    <div class="col2">
+                        <label for="comentarios">Comentarios</label>
+                        <textarea name="comentarios" id="comentarios" rows="10" cols="35"></textarea>
+                        <input class="button" type="submit" name="" value="Enviar"/>
+                    </div>
+                </form>
+            </div>
+        </footer>
+    </body>
+</html>
