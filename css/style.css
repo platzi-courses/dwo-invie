@@ -20,12 +20,62 @@ body {
     margin: 0;
 }
 
-.button {
-    border-radius: 5px;
-    border: none;
-    background: #fd324e;
+table {
+    width: 100%;
+}
+
+th {
+    background: #273b47;
     color: white;
-    padding: 7px;
+    padding: 10px 20px;
+    text-align: left
+}
+
+td {
+    padding: 20px;
+}
+
+table, th, td {
+    border: 1px solid #273b47;
+    border-collapse: collapse;
+}
+
+input, textarea {
+    outline: 0;
+}
+
+input:focus, textarea:focus {
+    background: lightgray;
+}
+
+.contenedor {
+    width: 800px;
+    margin: auto;
+    position: relative;
+}
+
+.background {
+    background-image: url('../images/background.png');
+    background-size: cover;
+
+}
+
+.button {
+    border-radius: 8px;
+    border: none;
+    color: white;
+    padding: 7px 12px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 18px;
+    background: #fd324e;
+    background: linear-gradient(to left,#fe344e, #ff7250);
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f85032+0,f16f5c+50,f6290c+51,f02f17+71,e73827+100;Red+Gloss+%231 */
+    /*background: #f85032;
+    background: -moz-linear-gradient(left,  #f85032 0%, #f16f5c 50%, #f6290c 51%, #f02f17 71%, #e73827 100%);
+    background: -webkit-linear-gradient(left,  #f85032 0%,#f16f5c 50%,#f6290c 51%,#f02f17 71%,#e73827 100%);
+    background: linear-gradient(to right,  #f85032 0%,#f16f5c 50%,#f6290c 51%,#f02f17 71%,#e73827 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f85032', endColorstr='#e73827',GradientType=1 );*/
 }
 
 .titulo {
@@ -45,8 +95,13 @@ body {
     margin-bottom: 20px;
 }
 
+.titulo span {
+    text-decoration: underline;
+}
+
 .guitarras {
     color: #1F313C;
+    margin-bottom: 50px;
 }
 
 .guitarras h2 {
@@ -55,9 +110,9 @@ body {
 }
 
 .portada {
-    background-image: url('../images/background.png');
     color: white;
     padding: 20px;
+    height: 500px;
 }
 
 .portada button {
@@ -85,29 +140,33 @@ body {
     content: '∘';
     font-size: 50px;
     line-height: 20px;
-    color: blue;
+    color: white;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
 }
 
 .logotipo {
     display: inline-block;
-}
-
-.contenedor {
-    width: 800px;
-    margin: auto;
+    margin-left: 0;
 }
 
 .guitarra {
-    border: 10px;
+    margin: 10px 10px 40px 10px;
     padding: 10px;
-    margin-top: 10px;
-    border-radius: 8px;
     /*overflow: hidden;*/
     border: 1px solid #1F313C;
+    border-radius: 8px;
 }
 
 .guitarra ol {
     padding: 0;
+}
+
+.guitarra.b {
+    height: 190px
 }
 
 .contenedor-guitarra-a {
@@ -115,7 +174,9 @@ body {
 }
 
 .contenedor-guitarra-b {
-    margin-left: 370px
+    margin-left: 370px;
+    position: relative;
+    bottom: 90px;
 }
 
 .right{
@@ -127,11 +188,11 @@ body {
 .left{
     float: left;
     position: relative;
-    top: 80px;
 }
 
 .footer {
     background: #273b47;
+    padding: 50px 10px;
 }
 
 .contacto {
@@ -164,7 +225,6 @@ body {
     display: flex;
     width: 420px;
     color: white;
-    padding: 50px 10px;
 }
 
 .col1, .col2 {
@@ -180,6 +240,10 @@ body {
     align-items: flex-start;
 }
 
+.col2 .button {
+    margin-top: 10px;
+}
+
 .intereses label {
     font-size: 12px;
 }
@@ -192,22 +256,14 @@ body {
     margin-top: 10px;
 }
 
-table {
-    width: 100%;
+.sect {
+    display: inline-block;
 }
 
-th {
-    background: #273b47;
-    color: white;
-    padding: 10px 20px;
-    text-align: left
+.intereses ul {
+    padding-left: 0;
 }
 
-td {
-    padding: 20px;
-}
-
-table, th, td {
-    border: 1px solid #273b47;
-    border-collapse: collapse;
+.tabla {
+    margin: 50px 0;
 }

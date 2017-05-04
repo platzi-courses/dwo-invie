@@ -8,24 +8,24 @@
         <link rel="stylesheet" type="text/css" href="css/style.css">
     </head>
     <body>
-        <header id="header" class="header contenedor"> <!--Header-->
-        <figure class="logotipo"> <!--Logotipo-->
-            <img src="images/invie.png" width="186" alt="Logotipo Invie">
-        </figure>
-        <nav class="menu"> <!--Menu-->
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#guitarras">Guitarras</a></li>
-                <li><a href="precios.html">Precios</a></li>
-            </ul>
-        </nav>    
-        </header>
-        <section id="portada" class="portada"> <!--Portada-->
+        <section id="portada" class="portada background"> <!--Portada-->
+            <header id="header" class="header contenedor"> <!--Header-->
+            <figure class="logotipo"> <!--Logotipo-->
+                <img src="images/invie.png" width="186" alt="Logotipo Invie">
+            </figure>
+            <nav class="menu"> <!--Menu-->
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#guitarras">Guitarras</a></li>
+                    <li><a href="precios.html">Precios</a></li>
+                </ul>
+            </nav>    
+            </header>
         <!--Agregamos este nuevo div para separar el background de la portada del contenido textual. De esta forma manenemos la imagen de fondo en widescreen-->
             <div class="contenedor">
-                <h1 class="titulo">Guitarras Inviesibles</h1> <!--Titulo-->
+                <h1 class="titulo">Guitarras <span>Invie</span>sibles</h1> <!--Titulo-->
                 <h3 class="title-a">Sé la estrella de Rock que siempre quisiste ser</h3> <!--Resumen-->
-                <button class="button" type="">Conoce más</button> <!--Boton-->
+                <a class="button" href="#guitarras" type="">Conoce más</a> <!--Boton-->
             </div>
         </section>
         <section id="guitarras" class="guitarras contenedor"> <!--Guitarras-->
@@ -41,7 +41,7 @@
                     </ol>
                 </div>
             </article>
-            <article class="guitarra"> <!--Guitarra2-->
+            <article class="guitarra b"> <!--Guitarra2-->
                 <img class="left" src="images/invie-classic.png" width="350" alt="Imagen Clásica">
                 <div class="contenedor-guitarra-b">
                     <h3 class="title-b">Invie Clásica</h3>
@@ -75,23 +75,33 @@
                             </label>
                         </div>
                         <div class="intereses">
-                            <label for="cotizacion">
-                                <input type="checkbox" id="cotizacion" name="intereses" value="cotizacion" checked>Cotización
-                            </label>
-                            <label for="reclamos">
-                                <input type="checkbox" id="reclamos" name="intereses" value="reclamos">Reclamos
-                            </label>
-                            <label for="comentarios">
-                                <input type="checkbox" id="comentarios" name="intereses" value="comentarios">Comentarios
-                            </label>
-                            <label for="otros">
-                                <input type="checkbox" id="otros" name="intereses" value="otros">Otros
-                            </label>
+                            <ul>
+                                <li class="sect">
+                                    <label for="cotizacion">
+                                        <input type="checkbox" id="cotizacion" name="intereses" value="cotizacion" checked>Cotización
+                                    </label>
+                                </li>
+                                <li class="sect">
+                                    <label for="reclamos">
+                                        <input type="checkbox" id="reclamos" name="intereses" value="reclamos">Reclamos
+                                    </label>
+                                </li>
+                                <li class="sect">
+                                    <label for="comentarios">
+                                        <input type="checkbox" id="comentarios" name="intereses" value="comentarios">Comentarios
+                                    </label>
+                                </li>
+                                <li class="sect">
+                                    <label for="otros">
+                                        <input type="checkbox" id="otros" name="intereses" value="otros">Otros
+                                    </label>
+                                </li>
+                            </ul>
                         </div>                        
                     </div>
                     <div class="col2">
                         <label for="comentarios">Comentarios</label>
-                        <textarea name="comentarios" id="comentarios" rows="10" cols="35"></textarea>
+                        <textarea name="comentarios" id="comentarios" rows="10" cols="20"></textarea>
                         <input class="button" type="submit" name="" value="Enviar"/>
                     </div>
                 </form>
